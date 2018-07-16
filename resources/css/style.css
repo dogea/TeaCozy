@@ -6,21 +6,52 @@ html, a {
   opacity: 0.9;
 }
 
-.header {
-  display: inline-flex;
+nav span {
+  display: inline-block;
+  padding: 10px 10px;
   text-decoration: underline;
+}
+
+h4, h2 {
+  background-color: Black;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
   height: 69px;
-  align-content: space-between;
+  align-items: center;
   border-bottom: 1px solid Seashell;
   width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: Black;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  padding-left: 10px;
+  flex-grow: 1;
 }
 
 .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 70px;
 }
 
 .mission {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   background-image: url("../images/img-mission-background.jpg");
   background-color: Black;
   height: 700px;
@@ -30,6 +61,13 @@ html, a {
 .teaofthemonth {
   display: inline-flex;
   flex-wrap: wrap;
+  width: 1000px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tea {
+  text-align: center;
 }
 
 .locations {
@@ -37,10 +75,30 @@ html, a {
   background-color: Black;
   height: 500px;
   width: 1200px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addresses {
   display: inline-flex;
-  align-content: space-around;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.left, .center, .right {
+  text-align: center;
+  width: 300px;
+  background-color: Black;
+}
+
+.contact {
+  text-align: center;
+  height: 200px;
 }
 
 .footer {
-
+  text-align: left;
+  padding-left: 20px;
 }
